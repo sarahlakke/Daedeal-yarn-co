@@ -1,0 +1,68 @@
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; 
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("./images/header-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 5rem;
+    width: 100%;
+}
+
+header ul {
+    background-color: #FFBF88;
+    height: 2rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    margin-right: 2rem;
+    border-radius: 60px;
+}
+
+header li {
+    display: inline-flex;
+    margin-right: 1.25rem;
+}
+
+header li a {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+header li a:hover {
+    color: #202020;
+}
+
+.logo {
+    font-family: "Birthstone Bounce", cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #202020;
+    background-color: #FFBF88;
+    margin-left: 5rem;
+    border-radius: 60px;
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        height: 9rem;
+    }
+
+    .logo {
+        margin-left: 0.5rem;
+    }
+
+    header ul {
+        height: 5rem;
+    }
+
+    header li {
+        display: flex;
+        flex-direction: vertical;
+    }
+}
