@@ -1,6 +1,7 @@
 html {
     font-family: 'Poppins', sans-serif;
     font-size: 16px; 
+    background-color: #fdfaed;
 }
 
 /* Header */
@@ -64,5 +65,88 @@ header li a:hover {
     header li {
         display: flex;
         flex-direction: vertical;
+    }
+}
+
+/* Company slogan/header thingie*/
+.company {
+    display: flex;
+}
+
+.company div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2rem;
+    height: 30rem;
+    margin-right: 3px;
+    flex: 5;
+}
+
+#main {
+    background-image: url(./images/main-3.jpg);
+}
+
+#side {
+    background-image: url(./images/projects.jpg);
+}
+
+
+/* Products */
+.products {
+    display: flex;
+    flex-direction: row;
+}
+
+.products p {
+    height: 20rem;
+    flex-basis: 20rem;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.products a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: white;
+    opacity: 0.75;
+}
+
+#yarns {
+    background-image: url(./images/yellow-yarn.jpg);
+}
+
+#handdye {
+    background-image: url(./images/handdyed-skeins.jpg);
+}
+
+#patterns {
+    background-image: url(./images/patterns.jpg);
+}
+
+#projects {
+    background-image: url(./images/yarn-bag.jpg);
+}
+
+
+@media only screen and (max-width: 800px) {
+    .products {
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .products p {
+        flex-basis: 49%;
+        margin-right: 1px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .products p {
+        min-width: 10rem;
+        margin-right: 3px;
     }
 }
